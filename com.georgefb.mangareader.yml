@@ -25,4 +25,4 @@ modules:
     sources:
       - type: git
         url: 'https://gitlab.com/g-fb/manga-reader/'
-        tag: 1.0.5
+        tag: 1.0.6
