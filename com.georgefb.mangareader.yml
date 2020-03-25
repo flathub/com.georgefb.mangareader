@@ -18,11 +18,19 @@ modules:
       - '--without-xml2'
     sources:
       - type: archive
-        url: 'http://libarchive.org/downloads/libarchive-3.3.2.tar.gz'
-        sha256: ed2dbd6954792b2c054ccf8ec4b330a54b85904a80cef477a1c74643ddafa0ce
+        url: 'https://www.libarchive.de/downloads/libarchive-3.4.2.zip'
+        sha256: 9af28a8e88baa0d25123122ea4661478726f0544cee826a22b1db1feed3c01e2
+  - name: unrar
+    no-autogen: true
+    make-install-args:
+      - DESTDIR=/app
+    sources:
+      - type: archive
+        url: 'http://www.rarlab.com/rar/unrarsrc-5.9.1.tar.gz'
+        sha256: 0eb1d1b8e02102fccae775a6d6b79336b69e2cf90e2045de92594dcfb58de100
   - name: Manga-Reader
     buildsystem: cmake-ninja
     sources:
       - type: git
         url: 'https://gitlab.com/g-fb/manga-reader/'
-        tag: 1.1.0
+        tag: 1.2.0
