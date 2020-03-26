@@ -34,5 +34,3 @@ modules:
       - type: git
         url: 'https://gitlab.com/g-fb/manga-reader/'
         tag: 1.2.0
-      - type: patch
-        path: 001-fix-placeholder-subtitution.patch
