@@ -26,11 +26,11 @@ modules:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'http://www.rarlab.com/rar/unrarsrc-5.9.1.tar.gz'
-        sha256: 0eb1d1b8e02102fccae775a6d6b79336b69e2cf90e2045de92594dcfb58de100
+        url: 'http://www.rarlab.com/rar/unrarsrc-5.9.2.tar.gz'
+        sha256: 73d3baf18cf0a197976af2794a848893c35e7d42cee0ff364c89d2e476ebdaa6
   - name: Manga-Reader
     buildsystem: cmake-ninja
     sources:
       - type: git
         url: 'https://gitlab.com/g-fb/manga-reader/'
-        tag: 1.2.0
+        tag: 1.3.0
