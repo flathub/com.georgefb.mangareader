@@ -1,6 +1,6 @@
 app-id: com.georgefb.mangareader
 runtime: org.kde.Platform
-runtime-version: '5.14'
+runtime-version: '5.15'
 sdk: org.kde.Sdk
 command: mangareader
 rename-icon: mangareader
@@ -13,24 +13,27 @@ finish-args:
   - '--filesystem=host'
   - '--talk-name=ca.desrt.dconf'
 modules:
+  - name: mangareader
+    buildsystem: cmake-ninja
+    build-options:
+      build-args:
+        - '--share=network'
+    sources:
+      - type: archive
+        url: 'https://gitlab.com/g-fb/manga-reader/-/archive/1.4.0/manga-reader-1.4.0.tar.gz'
+        sha256: 'b5800ab9359b28a567564c2129ae179d33beb9a497e5b270ffeb588668f0581f'
   - name: libarchive
     config-opts:
       - '--without-xml2'
     sources:
       - type: archive
-        url: 'https://www.libarchive.de/downloads/libarchive-3.4.2.zip'
-        sha256: 9af28a8e88baa0d25123122ea4661478726f0544cee826a22b1db1feed3c01e2
+        url: 'https://www.libarchive.de/downloads/libarchive-3.4.3.zip'
+        sha256: '9077d860c07c4b13f8a8bc88920ab96942c8eaa2df364c310a498e9e42051e86'
   - name: unrar
     no-autogen: true
     make-install-args:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'http://www.rarlab.com/rar/unrarsrc-5.9.2.tar.gz'
-        sha256: 73d3baf18cf0a197976af2794a848893c35e7d42cee0ff364c89d2e476ebdaa6
-  - name: Manga-Reader
-    buildsystem: cmake-ninja
-    sources:
-      - type: git
-        url: 'https://gitlab.com/g-fb/manga-reader/'
-        tag: 1.3.0
+        url: 'https://www.rarlab.com/rar/unrarsrc-6.0.1.tar.gz'
+        sha256: '43e4d3ac762e2f58bfa9e37693efa342c1363eb1029fab409dfdf69171201450'
