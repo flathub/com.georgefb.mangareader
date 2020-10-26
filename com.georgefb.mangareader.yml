@@ -15,13 +15,16 @@ finish-args:
 modules:
   - name: mangareader
     buildsystem: cmake-ninja
-    build-options:
-      build-args:
-        - '--share=network'
+    config-opts: 
+      - "-DUseFetchContent=OFF"
     sources:
       - type: archive
         url: 'https://gitlab.com/g-fb/manga-reader/-/archive/1.4.0/manga-reader-1.4.0.tar.gz'
         sha256: 'b5800ab9359b28a567564c2129ae179d33beb9a497e5b270ffeb588668f0581f'
+      - type: git
+        url: 'https://github.com/antony-jr/QArchive'
+        commit: '01d4da1c8ac1c4fcddf4bf1aa96f7a555da17b2b'
+        dest: "QArchive"
   - name: libarchive
     config-opts:
       - '--without-xml2'
