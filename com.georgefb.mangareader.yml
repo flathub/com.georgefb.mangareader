@@ -19,8 +19,8 @@ modules:
       - "-DUseFetchContent=OFF"
     sources:
       - type: archive
-        url: 'https://gitlab.com/g-fb/manga-reader/-/archive/1.4.0/manga-reader-1.4.0.tar.gz'
-        sha256: 'b5800ab9359b28a567564c2129ae179d33beb9a497e5b270ffeb588668f0581f'
+        url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.4.1/mangareader-1.4.1.tar.gz'
+        sha256: '70dbb2ab464f5c84dbada9a595b6c5a48df75f33e672e9fd22b173c28750d0fc'
       - type: git
         url: 'https://github.com/antony-jr/QArchive'
         commit: '01d4da1c8ac1c4fcddf4bf1aa96f7a555da17b2b'
