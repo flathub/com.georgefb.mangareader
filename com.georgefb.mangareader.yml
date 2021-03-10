@@ -19,8 +19,8 @@ modules:
       - "-DUseFetchContent=OFF"
     sources:
       - type: archive
-        url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.4.1/mangareader-1.4.1.tar.gz'
-        sha256: '70dbb2ab464f5c84dbada9a595b6c5a48df75f33e672e9fd22b173c28750d0fc'
+        url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.5.0/mangareader-1.5.0.tar.gz'
+        sha256: '9d40421dd7305562c04b0ad3c5cf1af04bc2836259c67db33e23680a9e7ea464'
       - type: git
         url: 'https://github.com/antony-jr/QArchive'
         commit: '01d4da1c8ac1c4fcddf4bf1aa96f7a555da17b2b'
@@ -30,13 +30,13 @@ modules:
       - '--without-xml2'
     sources:
       - type: archive
-        url: 'https://www.libarchive.de/downloads/libarchive-3.4.3.zip'
-        sha256: '9077d860c07c4b13f8a8bc88920ab96942c8eaa2df364c310a498e9e42051e86'
+        url: 'https://www.libarchive.de/downloads/libarchive-3.5.1.zip'
+        sha256: '8258794a3ec607dc1693aadda68e23c3521639e477973eb37901f238c7534bfc'
   - name: unrar
     no-autogen: true
     make-install-args:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'https://www.rarlab.com/rar/unrarsrc-6.0.1.tar.gz'
-        sha256: '43e4d3ac762e2f58bfa9e37693efa342c1363eb1029fab409dfdf69171201450'
+        url: 'https://www.rarlab.com/rar/unrarsrc-6.0.4.tar.gz'
+        sha256: '130197e495d6e2c2ee790a5beee123edeed642508be13f0159672e5397aca6c1'
