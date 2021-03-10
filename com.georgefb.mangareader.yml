@@ -20,7 +20,7 @@ modules:
     sources:
       - type: archive
         url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.5.0/mangareader-1.5.0.tar.gz'
-        sha256: '9d40421dd7305562c04b0ad3c5cf1af04bc2836259c67db33e23680a9e7ea464'
+        sha256: '34b6dc38a5b0e8c4c343e4099ce6c525b0992622dd6c841486d8a020074fb0e6'
       - type: git
         url: 'https://github.com/antony-jr/QArchive'
         commit: '01d4da1c8ac1c4fcddf4bf1aa96f7a555da17b2b'
