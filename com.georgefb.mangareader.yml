@@ -1,6 +1,7 @@
+---
 app-id: com.georgefb.mangareader
 runtime: org.kde.Platform
-runtime-version: '5.15'
+runtime-version: '5.15-21.08'
 sdk: org.kde.Sdk
 command: mangareader
 rename-icon: mangareader
@@ -16,27 +17,26 @@ modules:
   - name: mangareader
     buildsystem: cmake-ninja
     config-opts: 
-      - "-DUseFetchContent=OFF"
+      - '-DUseFetchContent=OFF'
     sources:
       - type: archive
-        url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.5.0/mangareader-1.5.0.tar.gz'
-        sha256: '34b6dc38a5b0e8c4c343e4099ce6c525b0992622dd6c841486d8a020074fb0e6'
-      - type: git
-        url: 'https://github.com/antony-jr/QArchive'
-        commit: '01d4da1c8ac1c4fcddf4bf1aa96f7a555da17b2b'
-        dest: "QArchive"
-  - name: libarchive
-    config-opts:
-      - '--without-xml2'
-    sources:
-      - type: archive
-        url: 'https://www.libarchive.de/downloads/libarchive-3.5.1.zip'
-        sha256: '8258794a3ec607dc1693aadda68e23c3521639e477973eb37901f238c7534bfc'
+        url: 'https://gitlab.com/g-fb/mangareader/-/archive/1.6.0/mangareader-1.6.0.tar.gz'
+        sha256: '3f1fd1af49d571029fe332daa8b14a3c7df2533adb8bb1bb52641ab20ae4849c'
+    modules:
+      - name: QArchive
+        buildsystem: cmake-ninja
+        config-opts:
+          - '-DQARCHIVE_STATIC=OFF'
+        sources:
+        - type: archive
+          url: 'https://github.com/antony-jr/QArchive/archive/refs/tags/v2.1.1.tar.gz'
+          sha256: '4ed51121a5bc9b5981d2fa3927f951a6a91ccca233d6b6dc4fef55b4ca5a2d92'
+          
   - name: unrar
     no-autogen: true
     make-install-args:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'https://www.rarlab.com/rar/unrarsrc-6.0.4.tar.gz'
-        sha256: '130197e495d6e2c2ee790a5beee123edeed642508be13f0159672e5397aca6c1'
+        url: 'https://www.rarlab.com/rar/unrarsrc-6.1.2.tar.gz'
+        sha256: '3e96421f568e438af6dcdaef717c48eb93b825d97058ebcb173b9bfc57807be3'
