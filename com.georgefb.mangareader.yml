@@ -20,8 +20,8 @@ modules:
       - '-DUseFetchContent=OFF'
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/1.7.1.tar.gz'
-        sha256: '35ef020f4dbb09916e1c111b0629fe5bc7ed55cd7f4d3dd4ee3b15bf510a66c1'
+        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/1.7.2.tar.gz'
+        sha256: 'ac9e6ae8328874763d7a13f91dc71f459e63e80668badea85f1f79d614e11ba0'
     modules:
       - name: QArchive
         buildsystem: cmake-ninja
