@@ -19,7 +19,7 @@ modules:
     sources:
       - type: archive
         url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.0.tar.gz'
-        sha256: '3c0f3c4fe00b46c30ae21cc2bcf44ef6d977253388f6eaea4a48b87c3e553c4b'
+        sha256: '7ce7723c2eb06a34729ebee8065b3b6e2515ef3fbb240ddcf39d73d1635fc810'
           
   - name: unrar
     no-autogen: true
