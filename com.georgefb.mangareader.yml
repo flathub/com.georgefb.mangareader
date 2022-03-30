@@ -16,24 +16,10 @@ finish-args:
 modules:
   - name: mangareader
     buildsystem: cmake-ninja
-    config-opts: 
-      - '-DUseFetchContent=OFF'
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/1.7.2.tar.gz'
-        sha256: 'ac9e6ae8328874763d7a13f91dc71f459e63e80668badea85f1f79d614e11ba0'
-    modules:
-      - name: QArchive
-        buildsystem: cmake-ninja
-        config-opts:
-          - '-DQARCHIVE_STATIC=OFF'
-        sources:
-        #- type: archive
-          #url: 'https://github.com/antony-jr/QArchive/archive/refs/tags/v2.1.1.tar.gz'
-          #sha256: '4ed51121a5bc9b5981d2fa3927f951a6a91ccca233d6b6dc4fef55b4ca5a2d92'
-        - type: git
-          url: 'https://github.com/antony-jr/QArchive'
-          commit: '2d05e652ad9a2bff8c87962d5525e2b3c4d7351b'
+        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.0.tar.gz'
+        sha256: '3c0f3c4fe00b46c30ae21cc2bcf44ef6d977253388f6eaea4a48b87c3e553c4b'
           
   - name: unrar
     no-autogen: true
@@ -41,5 +27,5 @@ modules:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'https://www.rarlab.com/rar/unrarsrc-6.1.4.tar.gz'
-        sha256: 'c0ed58629243961c3f1ec90c08b11ff93261e568dbfdce2bf3b759ee7a4a3b7c'
+        url: 'https://www.rarlab.com/rar/unrarsrc-6.1.6.tar.gz'
+        sha256: '67f4ab891c062218c2badfaac9c8cab5c8bfd5e96dabfca56c8faa3d209a801d'
