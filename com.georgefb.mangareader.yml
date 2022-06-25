@@ -18,8 +18,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.2.tar.gz'
-        sha256: '07b0a4dcfab16a1c0abe46c1a92fa9750bb5191d9dea7f7f5c76080a9e8294a4'
+        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.3.tar.gz'
+        sha256: 'd0896ec40d9e08a731fa1a81921dea9667bc19e4590184cd7c67393c852a214b'
           
   - name: unrar
     no-autogen: true
@@ -27,5 +27,5 @@ modules:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: 'https://www.rarlab.com/rar/unrarsrc-6.1.6.tar.gz'
-        sha256: '67f4ab891c062218c2badfaac9c8cab5c8bfd5e96dabfca56c8faa3d209a801d'
+        url: 'https://www.rarlab.com/rar/unrarsrc-6.1.7.tar.gz'
+        sha256: 'de75b6136958173fdfc530d38a0145b72342cf0d3842bf7bb120d336602d88ed'
