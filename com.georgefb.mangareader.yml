@@ -18,8 +18,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.3.tar.gz'
-        sha256: 'd0896ec40d9e08a731fa1a81921dea9667bc19e4590184cd7c67393c852a214b'
+        url: 'https://github.com/g-fb/mangareader/archive/refs/tags/2.0.4.tar.gz'
+        sha256: 'da9d0323f5862b232a844fc7a46cf2fb84149075172c4da6d10c64ff2711cd28'
           
   - name: unrar
     no-autogen: true
