@@ -20,7 +20,6 @@ modules:
       - type: archive
         url: https://github.com/g-fb/mangareader/archive/refs/tags/2.2.1.tar.gz
         sha256: e7804ce8360a478060d8daf0b6389390f7b16140000f2efae56c1b16c6092314
-
   - name: unrar
     no-autogen: true
     make-install-args:
