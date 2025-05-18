@@ -1,7 +1,7 @@
 ---
 app-id: com.georgefb.mangareader
 runtime: org.kde.Platform
-runtime-version: 6.7
+runtime-version: 6.9
 sdk: org.kde.Sdk
 command: mangareader
 rename-icon: mangareader
@@ -18,13 +18,17 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.2.1.tar.gz
-        sha256: e7804ce8360a478060d8daf0b6389390f7b16140000f2efae56c1b16c6092314
+        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.2.2.tar.gz
+        sha256: cd06b518cb6e8ee411af430a122320387c4e32ea527eb90524e850349facfa2c
   - name: unrar
     no-autogen: true
     make-install-args:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: https://www.rarlab.com/rar/unrarsrc-7.0.8.tar.gz
-        sha256: f68b6a0bb16cbc7e157652542966ee64ca66ae3958273a64128484c51f1b768d
+        url: https://www.rarlab.com/rar/unrarsrc-7.1.6.tar.gz
+        sha256: ca5e1da37dd6fa1b78bb5ed675486413f79e4a917709744aa04b6f93dfd914f0
+        x-checker-data:
+          type: anitya
+          project-id: 13306
+          url-template: https://www.rarlab.com/rar/unrarsrc-$version.tar.gz
