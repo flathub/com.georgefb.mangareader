@@ -1,0 +1,21 @@
+diff --git a/src/kzip.cpp b/src/kzip.cpp
+index 32460b5e2db5d5a6ecd238c36e6cbef67e3da7c1..0b37c1a65c0b57aca1db7cb7786fcf438f88b894 100644
+--- a/src/kzip.cpp
++++ b/src/kzip.cpp
+@@ -268,13 +268,13 @@ static bool parseExtraField(const char *buffer, int size, ParseFileInfo &pfi)
+ 
+         switch (magic) {
+         case 0x0001: // ZIP64 extended file information
+-            if (size >= 8) {
++            if (fieldsize >= 8) {
+                 pfi.uncompressedSize = parseUi64(buffer);
+             }
+-            if (size >= 16) {
++            if (fieldsize >= 16) {
+                 pfi.compressedSize = parseUi64(buffer + 8);
+             }
+-            if (size >= 24) {
++            if (fieldsize >= 24) {
+                 pfi.localheaderoffset = parseUi64(buffer + 16);
+             }
+             break;
