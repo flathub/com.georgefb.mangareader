@@ -24,26 +24,26 @@ modules:
   - name: ecm
     buildsystem: cmake-ninja
     sources:
-    - type: archive
-      url: https://download.kde.org/stable/frameworks/6.22/extra-cmake-modules-6.22.0.tar.xz
-      sha256: cb83a69571b277c20b3a6567ef0b6f39bf29c43a619282bf4bb076feb4c609a6
-      x-checker-data:
-        type: anitya
-        project-id: 311432
-        url-template: https://download.kde.org/stable/frameworks/$version/extra-cmake-modules-$version.tar.xz
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/6.22/extra-cmake-modules-6.22.0.tar.xz
+        sha256: cb83a69571b277c20b3a6567ef0b6f39bf29c43a619282bf4bb076feb4c609a6
+        x-checker-data:
+          type: anitya
+          project-id: 311432
+          url-template: https://download.kde.org/stable/frameworks/$version/extra-cmake-modules-$version.tar.xz
 
   - name: karchive
     buildsystem: cmake-ninja
     sources:
-    - type: archive
-      url: https://download.kde.org/stable/frameworks/6.22/karchive-6.22.0.tar.xz
-      sha256: 84254bd0a51ff3d5e2fa22bb946309cec508f1fae726a7aea15149260c4db59d
-    - type: patch
-      path: karchive-use-correct-variable.diff
-      x-checker-data:
-        type: anitya
-        project-id: 8762
-        url-template: https://download.kde.org/stable/frameworks/$version/karchive-$version.tar.xz
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/6.22/karchive-6.22.0.tar.xz
+        sha256: 84254bd0a51ff3d5e2fa22bb946309cec508f1fae726a7aea15149260c4db59d
+      - type: patch
+        path: karchive-use-correct-variable.diff
+        x-checker-data:
+          type: anitya
+          project-id: 8762
+          url-template: https://download.kde.org/stable/frameworks/$version/karchive-$version.tar.xz
 
   - name: unrar
     no-autogen: true
@@ -51,8 +51,8 @@ modules:
       - DESTDIR=/app
     sources:
       - type: archive
-        url: https://www.rarlab.com/rar/unrarsrc-7.2.3.tar.gz
-        sha256: 3995af0aa32b1505a566da053725551a1f0698dc42b2fdf7ba7d65db0d004e33
+        url: https://www.rarlab.com/rar/unrarsrc-7.2.4.tar.gz
+        sha256: b02e571a33af7711cd803080500370dc1d28eea82b2032480819d27462ad8b31
         x-checker-data:
           type: anitya
           project-id: 13306
