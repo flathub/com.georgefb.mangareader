@@ -16,21 +16,12 @@ finish-args:
 modules:
   - name: mangareader
     buildsystem: cmake-ninja
+    post-install:
+      - install -Dm644 -t /app/share/licenses/${FLATPAK_ID} LICENSES/*
     sources:
       - type: archive
         url: https://github.com/g-fb/mangareader/archive/refs/tags/2.3.0.tar.gz
         sha256: a15b1677ebb3f537bd069fd9ebf9c9011dc3e82a4a1071d501da231ea2fbc8a8
-
-  - name: ecm
-    buildsystem: cmake-ninja
-    sources:
-      - type: archive
-        url: https://download.kde.org/stable/frameworks/6.22/extra-cmake-modules-6.22.0.tar.xz
-        sha256: cb83a69571b277c20b3a6567ef0b6f39bf29c43a619282bf4bb076feb4c609a6
-        x-checker-data:
-          type: anitya
-          project-id: 311432
-          url-template: https://download.kde.org/stable/frameworks/$version/extra-cmake-modules-$version.tar.xz
 
   - name: karchive
     buildsystem: cmake-ninja
