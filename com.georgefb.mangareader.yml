@@ -16,6 +16,8 @@ finish-args:
 modules:
   - name: mangareader
     buildsystem: cmake-ninja
+    post-install:
+      - install -Dm644 -t /app/share/licenses/${FLATPAK_ID} LICENSES/*
     sources:
       - type: archive
         url: https://github.com/g-fb/mangareader/archive/refs/tags/2.3.0.tar.gz
