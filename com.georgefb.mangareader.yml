@@ -20,8 +20,8 @@ modules:
       - install -Dm644 -t /app/share/licenses/${FLATPAK_ID} LICENSES/*
     sources:
       - type: archive
-        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.4.0.tar.gz
-        sha256: 8c19856110256702563dd1e7513878a4fc4212390b409e7030c7a604f8745834
+        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.5.0.tar.gz
+        sha256: f650d6e0e7456cce316592495770808bf13512c93fc66eaada0df25033412cf9
 
   - name: karchive
     buildsystem: cmake-ninja
