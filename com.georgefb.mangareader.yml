@@ -20,15 +20,15 @@ modules:
       - install -Dm644 -t /app/share/licenses/${FLATPAK_ID} LICENSES/*
     sources:
       - type: archive
-        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.5.0.tar.gz
-        sha256: f650d6e0e7456cce316592495770808bf13512c93fc66eaada0df25033412cf9
+        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.5.1.tar.gz
+        sha256: def520cc4f1930d440124d79a91b1c53249307dcc77af9d9704c91ba9b318ea2
 
   - name: karchive
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/6.24/karchive-6.24.0.tar.xz
-        sha256: b68faa1c9012e40bbed516d8bb6be21e743af5aafb0249a84c29a7d9ff150d0d
+        url: https://download.kde.org/stable/frameworks/6.26/karchive-6.26.0.tar.xz
+        sha256: a7fdf6d0b8db88d60aa52bcc87d8e00d95391a1ad39a4b2a8e9f3027b8ff4035
       - type: patch
         path: karchive-use-correct-variable.diff
         x-checker-data:
