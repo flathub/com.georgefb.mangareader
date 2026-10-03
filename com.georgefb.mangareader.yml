@@ -20,8 +20,8 @@ modules:
       - install -Dm644 -t /app/share/licenses/${FLATPAK_ID} LICENSES/*
     sources:
       - type: archive
-        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.5.1.tar.gz
-        sha256: def520cc4f1930d440124d79a91b1c53249307dcc77af9d9704c91ba9b318ea2
+        url: https://github.com/g-fb/mangareader/archive/refs/tags/2.5.2.tar.gz
+        sha256: 0cf3e283c814b3caf10820038d1ece8e874c76bc56794cdad4615e783835bee4
 
   - name: unrar
     no-autogen: true
